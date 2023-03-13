@@ -13,7 +13,7 @@ contract Mod1Challenge1 {
   }
   
   // Function for Testing out the Modifier
-  function giveAdminAccess(uint amount) public payable OnlyAdmin {
+  function giveAdminAccess() public payable OnlyAdmin {
     if(msg.sender != admin) {
       revert("You do not have access to this function.");
     }
